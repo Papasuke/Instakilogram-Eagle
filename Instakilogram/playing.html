@@ -6,111 +6,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <title>InstaKilogram - Educational society</title>
+        <link href="bootstrap5/css/bootstrap.min,css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.1.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Instakilogram Playspace</title>
     </head>
     <body>
-        <nav class="div-flex">
-            <div class="left-nav div-flex">
-                <img src="image/sandwich-menu.svg" alt="menu" class="menu-icon">
-                <img src="image/insta-logo.png" alt="logo" class="logo">
-            </div>
-            <div class="middle-nav div-flex">
-                <div class="search-box div-flex">
-                    <input type="text" placeholder="Search">
-                    <img src="image/search.png" alt="search-icon">
+        <div class="container">
+            <div class="msg-header">
+                <div class="msg-header-img">
+                    <img src="image/profile-image.jpg">
+                </div>
+                <div class="active">
+                    <h4>Anh Khoa</h4>
+                    <h6>4 hours ago</h6>
+                </div>
+                <div class="header-icons">
+                    <i class="fa fa-phone"></i>
+                    <i class="fa fa-video-camera"></i>
+                    <i class="fa fa-info-circle"></i>
                 </div>
             </div>
-            <div class="right-nav div-flex">
-            </div>
-        </nav>
-        <!-------------Sidebar-------------->
-        <div class="left-sidebar">
-            <div class="shortcut-sections">
-                <a href="#"><img src="image/home-icon.svg" alt="home-icon">
-                    <p>Home</p>
-                </a>
-                <a href="#"><img src="image/news-icon.svg" alt="news-icon">
-                    <p>News</p>
-                </a>
-                <a href="#"><img src="image/videos-icon.svg" alt="videos-icon">
-                    <p>Playing</p>
-                </a>
-                <a href="#"><img src="image/posts-icon.svg" alt="posts-icon">
-                    <p>Your posts</p>
-                </a>
-                <hr>
-                <div class="user-setting">
-                    <img src="image/profile-image.jpg" alt="profile-image" class="user-icon">
-                    <p>Anh Khoa</p>
-                </div>
-            </div>
-        </div>
-        <!-------------Middle-side-------------->
-        <div class="middle-side container">
-            <div class="upload-news-container">
-                <div class="user-profile">
-                    <img src="image/profile-image.jpg" alt="profile-image">
-                    <div>
-                        <p>Anh Khoa</p>
-                        <small>Public</small>
-                    </div>
-                </div>
-                <div class="news-input-container">
-                    <textarea rows="3" placeholder="How are you doing ?"></textarea>
-                    <div class="upload-buttons">
-                        <a href=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="news-container">
-                <div class="news-list">
-                    <div class="div-flex">
-                        <img src="image/profile-image.jpg" alt="profile-image">
-                        <div class="news-info">
-                            <H2>Anh Khoa</H2>
-                            <p>How to learn efficiently ! How to learn efficiently ! How to learn efficiently ! How to learn
-                                efficiently ! How to learn efficiently !</p>
+
+            <div class="chat-page">
+                <div class="msg-inbox">
+                    <div class="chats">
+                        <div class="msg-page">
+                            <div class="received-chats">
+                                <div class="received-chats-img">
+                                    <img src="image/profile-image.jpg">
+                                </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p>Test text</p>
+                                        <span class="time">6:09 PM | April 20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="outgoing-chats">
+                                <div class="outgoing-chats-msg">
+                                    <p>Test reply</p>
+                                    <span class="time">6:15 PM | April 20</span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="image/profile-image.jpg">
+                                </div>
+                            </div>
+
+                            <div class="received-chats">
+                                <div class="received-chats-img">
+                                    <img src="image/profile-image.jpg">
+                                </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p>Test text 2</p>
+                                        <span class="time">6:09 PM | April 20</span>
+                                    </div>
+                                </div>
+
+                            <div class="outgoing-chats">
+                                <div class="outgoing-chats-msg">
+                                    <p>Test reply 2</p>
+                                    <span class="time">6:15 PM | April 20</span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="image/profile-image.jpg">
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                    <a href=""><img src="image/beach-img.jpg" alt="beach" class="new-img"></a>
-                </div>
-                <div class="news-list">
-                    <div class="div-flex">
-                        <img src="image/profile-image.jpg" alt="profile-image">
-                        <div class="news-info">
-                            <H2>Anh Khoa</H2>
-                            <p>How to learn efficiently ! How to learn efficiently ! How to learn efficiently ! How to learn
-                                efficiently ! How to learn efficiently !</p>
-                        </div>
-                    </div>
-                    <a href=""><img src="image/beach-img.jpg" alt="beach" class="new-img"></a>
-                </div>
-                <div class="news-list">
-                    <div class="div-flex">
-                        <img src="image/profile-image.jpg" alt="profile-image">
-                        <div class="news-info">
-                            <H2>Anh Khoa</H2>
-                            <p>How to learn efficiently ! How to learn efficiently ! How to learn efficiently ! How to learn
-                                efficiently ! How to learn efficiently ! How to learn efficiently ! How to learn efficiently !
-                                How to learn efficiently ! How to learn efficiently ! How to learn efficiently !</p>
-                        </div>
-                    </div>
-                    <a href=""><img src="image/beach-img.jpg" alt="beach" class="new-img"></a>
-                </div>
-                <div class="news-list">
-                    <div class="div-flex">
-                        <img src="image/profile-image.jpg" alt="profile-image">
-                        <div class="news-info">
-                            <H2>Anh Khoa</H2>
-                            <p>How to learn efficiently ! How to learn efficiently ! How to learn efficiently ! How to learn
-                                efficiently ! How to learn efficiently !</p>
-                        </div>
-                    </div>
-                    <a href=""><img src="image/beach-img.jpg" alt="beach" class="new-img"></a>
                 </div>
             </div>
+
+            <div class="msg-bottom">
+                <div class="bottom-icons">
+                    <i class="fa fa-plus-circle"></i>
+                    <i class="fa fa-camera"></i>
+                    <i class="fa fa-microphone"></i>
+                    <i class="fa fa-smile-o"></i>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="write message here">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fa fa-paper-plane"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <script type="text/javascript" src="script.js"></script>
     </body>
-    
 </html>
