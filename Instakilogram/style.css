@@ -229,13 +229,6 @@ nav{
     resize: none;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
 /*Register-form-tyle*/
 .container-fluid-register{
     display: flex;
@@ -259,16 +252,16 @@ nav{
     perspective: 1000px;
 }
 
-.inside-form{
+/* .inside-form{
     display: flex;
     position: relative;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 1s;
-}
+} */
 
-.form-front, .form-back{
+.form-login, .form-register{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -322,6 +315,16 @@ button{
     outline: none;
     color: #fff !important;
     cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
 .submit-btn{
