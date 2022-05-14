@@ -3,23 +3,24 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-
-if (isset($_SESSION['validate'])) {
+if (isset($_POST['login]']) )
+{
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    header('location: admin.php');
     
-    if (isset($_POST['logout1'])) {
-        $_SESSION['validate'] = false;
-    }
-    if ($_SESSION['validate'] === true) {
-        echo "<script> var showLogout = true</script>";
-    }
-    if ($_SESSION['validate'] === false || !isset($_SESSION['validate'])) 
-    {
-        echo "<script>var showLogout = false</script>";
-    }
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+
+<?php $_SESSION['login'] = true; 
+if ($_SESSION['validate'] === false) {
+
+    echo "<script type='text/javascript'> document.location = 'admin.php'; </script>";
+}?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,11 +36,11 @@ if (isset($_SESSION['validate'])) {
             <div class="inside-form" id="inside-form">
                 <div class="form-front">
                     <a href="#" class="logo"><img src="image/insta-logo.png" alt="logo"></a>
-                    <H2>LOGIN</H2>
+                    <H2 action="login.php" > LOGIN </H2>
                     <form>
                         <input type="email" class="reg-input" placeholder="Your email @" required>
                         <input type="password" class="reg-input" placeholder="Your password" required>
-                        <button type="submit" class="submit-btn">Login</button>
+                        <button type="submit" class="submit-btn" name="login" >Login</button>
                         <input type="checkbox"><span>Remember account</span>
                     </form>
                     <button type="button" class="btn" onclick="openRegister()">Create new account</button>
@@ -56,6 +57,7 @@ if (isset($_SESSION['validate'])) {
                         <button type="submit" class="submit-btn" value="register"> Create </button>
                     </form>
                     <button type="button" class="btn" onclick="openLogin()">I already have an account</button>
+                    
 <?php
 if(isset($_POST['register']))   
 {
@@ -78,7 +80,7 @@ if(isset($_POST['register']))
             }
             else
             {
-                echo "something error, please register again";
+                die( "something error, please register again");
             }
         }
 }
